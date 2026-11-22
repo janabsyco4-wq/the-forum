@@ -1,0 +1,15 @@
+# Never upload secrets or local data to Vercel
+.env
+.env.*
+!.env.example
+.uploads/
+# Build output / caches (Vercel builds its own)
+.next/
+.next-backend/
+.next-*/
+node_modules/
+*.tsbuildinfo
+npm-debug.log*
+.DS_Store
+.claude/
+backups/

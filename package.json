@@ -1,0 +1,41 @@
+{
+  "name": "the-forum",
+  "version": "0.1.0",
+  "private": true,
+  "description": "THE FORUM — Think. Write. Debate. Act. An intellectual publishing and debate community.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "dev:backend": "next dev -p 3001",
+    "db:indexes": "tsx --conditions=react-server --env-file-if-exists=.env.local scripts/db-indexes.ts",
+    "db:seed": "tsx --conditions=react-server --env-file-if-exists=.env.local scripts/seed.ts",
+    "db:create-admin": "tsx --conditions=react-server --env-file-if-exists=.env.local scripts/create-admin.ts"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "^2.2.2",
+    "jose": "^6.2.18",
+    "lucide-react": "^1.73.0",
+    "mongodb": "^7.9.0",
+    "next": "16.4.6",
+    "nodemailer": "^10.6.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sanitize-html": "^2.18.2",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^22",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/sanitize-html": "^2.16.2",
+    "postcss": "^8",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9"
+  }
+}
